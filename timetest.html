@@ -1,0 +1,13 @@
+[[!+modx.user.id:gt=`0`:then=`
+<div style="background:rgba(255,255,255, 0.7); position:fixed; bottom:0; right:0; padding:10px; font-size:14px; z-index:10000; max-width:200px; color:#212121">
+    <b>ID [[*id]]</b>:&nbsp;
+    <a target="_blank" href="[[++manager_url]]?a=resource/update&id=[[*id]]" title="Edit" class="form-button" style="padding:3px 5px; height:auto; line-height:150%; margin: 0 0 5px 0">
+        Edit
+    </a>
+    <br />
+    Total: [^t^] | [^s^]
+    <div><strong>[[*published:is=`1`:then=`Опубликован`:else=`Неопубликован`]]</strong></div>
+    <div style="font-size: 80%;line-height: 99%;display: block;">Template: <strong><a href="manager/?a=element/template/update&id=[[*template]]" target="_blank">
+    [[getTemplateName]]</a></strong></div>
+</div>
+`]]
